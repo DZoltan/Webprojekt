@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="btn-group my-2 mx-3">
+    <a href="/" class="btn btn-primary p-2">Index</a>
+    <a href="/list" class="btn btn-secondary p-2">List</a>
+</div>
+<div class="d-flex justify-content-center">
+    <form action="/add" method="POST" class="w-50 d-flex justify-content-center">
+        <div>
+            <h4 class="m-3">Create a new Student!</h4>
+            <div class="mb-3">
+                <label for="firstName" class="form-label">First Name</label>
+                <input type="text" name="firstName"class="form-control" id="firstName">
+            </div>
+            <div class="mb-3">
+                <label for="lastName" class="form-label">Last Name</label>
+                <input type="text" name="lastName" class="form-control" id="lastName">
+            </div>
+            <div class="mb-3">
+                <label for="born" class="form-label">Born</label>
+                <input type="number" name="born" class="form-control" id="born">
+            </div>
+            <div class="d-flex justify-content-center m-3">
+                <button class="btn btn-primary m-2">Add Student</button>
+                <a href="/" class="btn btn-secondary m-2">Back to home</a>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>
